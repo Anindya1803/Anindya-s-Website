@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anindya Srivastava - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Page specific overrides for Portfolio */
+        .profile-section {
+            text-align: center;
+            padding: 6rem 0 4rem;
+            /* Theme specific override handled by class */
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-warm);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 30px rgba(211, 84, 0, 0.2);
+        }
+
+        /* Education Table */
+        .edu-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            color: var(--text-warm);
+        }
+
+        .edu-table th,
+        .edu-table td {
+            padding: 1rem;
+            border: 1px solid var(--card-border);
+            text-align: left;
+        }
+
+        .edu-table th {
+            background-color: rgba(211, 84, 0, 0.1);
+            color: var(--accent-warm);
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+        }
+
+        .edu-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* List Styles */
+        .custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .custom-list li::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--accent-warm);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="hobbies-theme">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="portfolio.html" class="logo">Anindya.S</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Dune Saga</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#research">Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="profile-section">
+        <div class="container">
+            <img src="profile_picture_anindya.jpg" alt="Anindya Srivastava" class="profile-img">
+            <h1>Anindya Srivastava</h1>
+            <p style="font-size: 1.2rem; opacity: 0.8;">MBA - Marketing | B.Tech</p>
+            <div style="margin-top: 1rem;">
+                <span class="tag">Marketing Strategy</span>
+                <span class="tag">Data Analytics</span>
+                <span class="tag">Product Management</span>
+                <span class="tag">Generative AI</span>
+            </div>
+            <div style="max-width: 800px; margin: 2rem auto 0;">
+                <p>
+                    I am an MBA Marketing student at T.A. Pai Management Institute with a strong technical foundation in
+                    B.Tech.
+                    Beyond the world of data and strategy, I am a passionate explorer of fictional worlds and culinary
+                    arts.
+                </p>
+                <!-- Contact button removed as requested -->
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Educational Qualifications</h2>
+            <div class="glass-card" style="overflow-x: auto;">
+                <table class="edu-table">
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institute/University/Board</th>
+                            <th>% / CGPA</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MBA</td>
+                            <td>T. A. Pai Management Institute, Manipal</td>
+                            <td>Pursuing</td>
+                            <td>2025-2027</td>
+                        </tr>
+                        <tr>
+                            <td>B. Tech</td>
+                            <td>Graphic Era Deemed to Be University, Dehradun</td>
+                            <td>86</td>
+                            <td>2020-2024</td>
+                        </tr>
+                        <tr>
+                            <td>HSC</td>
+                            <td>Lucknow Public School, Lucknow</td>
+                            <td>75</td>
+                            <td>2019-2020</td>
+                        </tr>
+                        <tr>
+                            <td>SSC</td>
+                            <td>Lucknow Public School, Lucknow</td>
+                            <td>84</td>
+                            <td>2017-2018</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">My Interests & Hobbies</h2>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem;">
+                When I'm not analyzing market trends, you can find me immersing myself in these creative pursuits.
+            </p>
+            <div class="hobby-grid">
+                <div class="hobby-card text-center" style="padding: 2rem;">
+                    <div class="hobby-icon">📚</div>
+                    <h3>Fictional Books</h3>
+                    <p>Getting lost in new worlds. From high fantasy epics like Dune to modern classics.</p>
+                </div>
+                <div class="hobby-card text-center" style="padding: 2rem;">
+                    <div class="hobby-icon">🍜</div>
+                    <h3>Anime & Manga</h3>
+                    <p>Appreciating the art of storytelling through Japanese animation and graphic novels.</p>
+                </div>
+                <div class="hobby-card text-center" style="padding: 2rem;">
+                    <div class="hobby-icon">🍳</div>
+                    <h3>Cooking</h3>
+                    <p>Experimenting with flavors and creating delicious meals. The kitchen is my lab.</p>
+                </div>
+                <div class="hobby-card text-center" style="padding: 2rem;">
+                    <div class="hobby-icon">🎬</div>
+                    <h3>Movies</h3>
+                    <p>A cinephile at heart. Exploring narratives across different genres and eras.</p>
+                </div>
+                <div class="hobby-card text-center" style="padding: 2rem;">
+                    <div class="hobby-icon">✈️</div>
+                    <h3>Travelling</h3>
+                    <p>Exploring new cultures, cuisines, and landscapes. Every journey is a lesson.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Achievements & Research</h2>
+            <div class="grid-3"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="glass-card">
+                    <h3>Tobacco Usage in India</h3>
+                    <p style="font-style: italic; opacity: 0.7; margin-bottom: 1rem;">UGC Approved Journal Paper</p>
+                    <p>Authored a paper uncovering how illiteracy and poverty drive youth tobacco usage. Generated
+                        compelling visuals offering distinct insights into behavioral patterns.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>BCIDS-IoT</h3>
+                    <p style="font-style: italic; opacity: 0.7; margin-bottom: 1rem;">Wiley Journal Publication</p>
+                    <p>Published a research paper on a machine learning intrusion detection system that achieved 95.76%
+                        accuracy, lowering false positives for massive network traffic.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>Volunteering & Leadership</h3>
+                    <p style="font-style: italic; opacity: 0.7; margin-bottom: 1rem;">Extra-Curricular Activities</p>
+                    <ul class="custom-list" style="font-size: 0.9rem;">
+                        <li><strong>Head of Zerone:</strong> Won Best Head Medal for leading 25+ team organizing sports
+                            events (footfall 700+).</li>
+                        <li><strong>Member - MATRIX IT Forum:</strong> Supported digital transformation initiatives at
+                            TAPMI.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section-padding" style="background: rgba(0,0,0,0.05);">
+        <div class="container">
+            <h2 class="text-center">Training & Certifications</h2>
+            <div class="grid-3"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h4 style="font-size: 1.1rem;">EA Product Management</h4>
+                    <p style="font-size: 0.8rem; color: var(--accent-warm);">Forage Job Simulation | Sep 2025</p>
+                    <p style="font-size: 0.9rem;">Managed KPIs for a mobile game to drive monetization and user
+                        engagement.</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h4 style="font-size: 1.1rem;">Deloitte Data Analytics</h4>
+                    <p style="font-size: 0.8rem; color: var(--accent-warm);">Forage Job Simulation | Feb 2025</p>
+                    <p style="font-size: 0.9rem;">Applied data analytics using Excel and Tableau to build dashboards and
+                        derive insights.</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h4 style="font-size: 1.1rem;">Generative AI</h4>
+                    <p style="font-size: 0.8rem; color: var(--accent-warm);">LinkedIn Learning | May-Jun 2024</p>
+                    <p style="font-size: 0.9rem;">Gained exposure to AI-driven search and business applications.</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h4 style="font-size: 1.1rem;">Data Analysis with Pandas</h4>
+                    <p style="font-size: 0.8rem; color: var(--accent-warm);">Coursera | Sep-Dec 2022</p>
+                    <p style="font-size: 0.9rem;">Developed proficiency in Python data manipulation, cleaning, and
+                        statistical analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Anindya Srivastava. All Rights Reserved.</p>
+            <div style="margin-top: 1.5rem; font-size: 1.1rem;">
+                <p style="margin-bottom: 0.5rem;">📞 +91-6386677165</p>
+                <p style="margin-bottom: 1rem;">
+                    <a href="https://linkedin.com/in/anindya1803" target="_blank"
+                        style="text-decoration: underline;">linkedin.com/in/anindya1803</a>
+                </p>
+                <p style="font-size: 0.9rem;">
+                    <a
+                        href="mailto:anindya.tapmimpl2025@learner.manipal.edu">anindya.tapmimpl2025@learner.manipal.edu</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
